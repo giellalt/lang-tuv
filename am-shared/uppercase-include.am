@@ -48,7 +48,7 @@ $(GTLANG).%.hfst: %.regex
 	-rm -f $@.script
 
 # Xerox fst targets:
-$(GTLANG).%.xfst: %.xfstscript
+$(GTLANG).%.xfst: %.xfscript
 	$(XFST) -l $< -e "save stack $@" -stop
 
 $(GTLANG).%.xfst: %.regex
