@@ -1,4 +1,8 @@
-$Rev: 59759 $
+$Rev: 59870 $ 
+Include filters and indent properly, use gtcore version of editdist.py in
+spellers
+
+r59759:
 Corrected syntax error, renamed a couple of errors.
 
 r59755:
