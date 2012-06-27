@@ -19,24 +19,7 @@
 GT_LEXC_ROOT=root.lexc
 # Set this to names of all other lexc files
 GT_LEXC_SRCS=\
-			 stems/abbr.lexc \
-			 stems/acro.lexc \
-			 stems/adj.lexc \
-			 stems/adv.lexc \
-			 stems/cc.lexc \
-			 stems/cs.lexc \
-			 stems/det.lexc \
-			 stems/interj.lexc \
-			 stems/noun.lexc \
-			 stems/numeral.lexc \
-			 stems/pp.lexc \
-			 stems/pron.lexc \
-			 stems/propernoun.lexc \
-			 stems/punct.lexc \
-			 stems/verb.lexc \
-			 affixes/adjectives.lexc \
-			 affixes/nouns.lexc \
-			 affixes/propernouns.lexc \
+			 stems/verbs.lexc \
 			 affixes/verbs.lexc
 
 include $(top_srcdir)/am-shared/lexc-include.am
