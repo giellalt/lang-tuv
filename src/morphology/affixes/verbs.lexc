@@ -4,14 +4,16 @@
 
 LEXICON VPrefixes
 0   aeVPrefix   ;
-0   aekVPrefix  ;
+0   akVPrefix  ;
 
 LEXICON aeVPrefix
-{ae}+    aeVerbs   ;
-{ae}+ki+    aeVerbs   ;
+a+    aeVerbs   ;
+{eɛ}+    aeVerbs   ;
+a+ki+    aeVerbs   ;
 
-LEXICON aekVPrefix
-{ae}+k+ aekVerbs   ;
+LEXICON akVPrefix
+a+k+ akVerbs   ;
+{eɛ}+k+ akVerbs   ;
 
 LEXICON aVSuffixes
 a+    VSuffixes   ;
@@ -26,12 +28,16 @@ LEXICON ɪVSuffixes
 ɪ+  VSuffixes   ;
 
 LEXICON VSuffixes
-+{eɛ}[+ATRdom]   #   ;
-+{eɛ}r{eɛ}[-ATRdom]  #   ;
-+{uʊ}n        #   ;
-+{ao}r       #   ;
-+k{iɪ}n{iɪ}    #   ;
++e[+ATRdom]         #   ;
++ɛ+rɛ[-ATRdom]    #   ;
++{uʊ}n              #   ;
++{ao}r              #   ;
++ɔr[-ATR←NoLow]              #   ;
++k{iɪ}n{iɪ}[NATR]         #   ;
++e[+ATR←NoLow]         #   ;
++een[+ATR←NoLow]    #   ;
 
+    #   ;
 
 ! vim: set ft=xfst-lexc:
 

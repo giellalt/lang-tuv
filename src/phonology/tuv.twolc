@@ -11,11 +11,13 @@ Alphabet
 ! ATR harmony vowels
  %{oɔ%}:o %{eɛ%}:e %{uʊ%}:u %{iɪ%}:i
  %{oɔ%}:ɔ %{eɛ%}:ɛ %{uʊ%}:ʊ %{iɪ%}:ɪ
- %{ae%}:a %{ae%}:e 
+! others
+ %{ao%}:o %{ao%}:a
 
 ! Triggers
-%[%+ATR%]:0 %[%-ATR%]:0 %[%+ATRdom%]:0 %[%-ATRdom%]:0
-
+ %[%+ATR%]:0 %[%-ATR%]:0 %[%+ATRdom%]:0 %[%-ATRdom%]:0
+ %[%+ATR←NoLow%]:0 %[%-ATR←NoLow%]:0
+ %[NATR%]:0 
 ! morpheme boundary
  %+:0 
  
@@ -24,33 +26,80 @@ Alphabet
 Sets
  Vow      = a e i o u y ɔ ɛ ʊ ɪ ;
  Cns      = b c d f g h j k l m n p q r s t v w x z ;
- ATRplus  = i u e o ə ;
- ATRminus = ɪ ʊ ɛ ɔ a ;
- ATRtrigs = %[%+ATR%] %[%-ATR%] %[%+ATRdom%] %[%-ATRdom%] ;
- ATRdoms = %[%+ATRdom%] %[%-ATRdom%] ;
+ ATRplusSurf  = i u e o ə ;
+ ATRminusSurf = ɪ ʊ ɛ ɔ a ;
+ ATRplusDeep = %[%+ATR%] %[%+ATRdom%] ;
+ ATRminusDeep = %[%-ATR%] %[%-ATRdom%] ;
+ ATRsurf = i u e o ə ɪ ʊ ɛ ɔ a ;
+ ATRdeep = %[%+ATR%] %[%-ATR%] %[%+ATRdom%] %[%-ATRdom%] %[%+ATR←NoLow%] %[%-ATR←NoLow%] ;
+ ATRdom = %[%+ATRdom%] %[%-ATRdom%] %[%+ATR←NoLow%] %[%-ATR←NoLow%] ;
+ blockersSurf = u a ;
+ blockersDeep = %+ ;
 
+Definitions
+NoATRsurfs = \[:ATRsurf | :blockersSurf]* ;
+NoATRs = \[ATRdeep: | :ATRsurf | :blockersSurf]* ;
+ContextATRplus = [ATRplusDeep: | :ATRplusSurf ] ;
+ContextATRminus = [ATRminusDeep: | :ATRminusSurf ] ;
+blockers = :blockersSurf | blockersDeep: ;
 Rules
 
-!! Baseline regressive explicit ATR
-
-"Match ATR+ with respective dominant trigger"
-AX:AP <= _ \ATRdoms:* %[%+ATRdom%]:  ;
-         %[%+ATR%]: \ATRtrigs:* _ \ATRtrigs:* ;
+"Where ATR+ is possible"
+AX:AP => _ ?* ContextATRplus ;
+         ContextATRplus ?* _ NoATRs ;
          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
                                           AP in (   o      e      u      i    )
                                             matched ;
 
-"Match ATR- with respective dominant trigger"
-AX:AM <= _ \ATRdoms:* %[%-ATRdom%]:  ;
-         %[%-ATR%]: \ATRtrigs:* _ \ATRtrigs:* ;
-          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
+"Where ATR- is possible"
+AX:AM => _ ?* ContextATRminus ;
+         ContextATRminus ?* _ NoATRs ;
+         where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
+                                          AM in (    ɔ      ɛ      ʊ      ɪ   )
+                                            matched ;
+
+"Disallow broken harmonies plus"
+AX:AP /<= _ \blockers* :ATRminusSurf ;
+          :ATRminusSurf \blockers* _ ;
+         where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
+                                          AP in (   o      e      u      i    )
+                                            matched ;
+
+"Disallow broken harmonies minus"
+AX:AM /<= _ \blockers* :ATRplusSurf ;
+          :ATRplusSurf \blockers* _ ;
+         where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
+                                          AM in (    ɔ      ɛ      ʊ      ɪ   )
+                                            matched ;
+
+"Require ATR+ No Low"
+AX:AH <= _  \ATRdom:* %[%+ATR←NoLow%]:   ;
+         where AX in ( %{oɔ%} %{eɛ%} )
+                                          AH in (   o      e    )
+                                            matched ;
+
+"Require ATR- No Low"
+AX:AM <= _  \ATRdom:* %[%-ATR←NoLow%]: ;
+         where AX in ( %{oɔ%} %{eɛ%} )
+                                          AM in (    ɔ      ɛ     )
+                                            matched ;
+
+"Where ATR+ is required"
+AX:AP <= _ \ATRdom:* %[%+ATRdom%]: ;
+         %[%+ATR%]: \ATRminusDeep:* _ NoATRs %[NATR%]: ;
+        _ NoATRs %[%+ATR%]: NoATRs .#. ;
+         where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
+                                          AP in (   o      e      u      i    )
+                                            matched ;
+
+"Where ATR- is required"
+AX:AM <= _ \ATRdom:* %[%-ATRdom%]: ;
+         %[%-ATR%]: \ATRplusDeep:* _ NoATRs %[NATR%]: ;
+        _ NoATRs %[%-ATR%]: NoATRs .#. ;
+         where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
                                           AM in (    ɔ      ɛ      ʊ      ɪ   )
                                             matched ;
 
 
-
 "Itive suffix after +ATR"
-%{ao%}:o <=> [ATRplus | %[%+ATR%]: ] \[ATRminus: | %[%-ATR%]: ]* _ ;
-
-"Prefix a→e if +ATR unblocked"
-%{ae%}:e <=> _ ?* %[%+ATRdom%]: ;
+%{ao%}:o <=> [:ATRplusSurf | %[%+ATR%]: ] \[ATRminusDeep: ]* _ ;

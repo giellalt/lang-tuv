@@ -33,7 +33,8 @@ Multichar_Symbols
 !! And following triggers to control the ATR dominant overrides and ATR
 !! stuff
  [+ATR] [-ATR] [+ATRdom] [-ATRdom]
-
+ [+ATR←NoLow] [-ATR←NoLow]
+ [NATR]
 LEXICON Root
 !! our examples are verbs, but this is prefixing language, so we'll start from
 !! there.

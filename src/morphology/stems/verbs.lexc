@@ -3,23 +3,23 @@
 !! Verbs in UNDEFINED language are actions.
 
 LEXICON aeVerbs
-g{oɔ}l[+ATR]   VSuffixes   ;
-r{eɛ}m[+ATR]   VSuffixes   ;
 b{uʊ}k[+ATR]   VSuffixes   ;
 d{oɔ}k[-ATR]   VSuffixes   ;
-gy{eɛ}l[-ATR]  VSuffixes   ;
 d{uʊ}k[-ATR]   VSuffixes   ;
-s{uʊ}b[+ATR]   aVSuffixes   ;
-tyak[+ATR]  aVSuffixes   ;
-{eɛ}n[+ATR]        ɪVSuffixes   ;
+{eɛ}n[-ATR]        ɪVSuffixes   ;
+g{oɔ}l[+ATR]   VSuffixes   ;
+gy{eɛ}l[-ATR]  VSuffixes   ;
 l{eɛ}p[+ATR]   VSuffixes   ;
+m{oɔ}r[+ATR]   VSuffixes   ;
 p{oɔ}r[+ATR]   VSuffixes   ;
 r{eɛ}m[+ATR]   VSuffixes   ;
-m{oɔ}r[+ATR]   VSuffixes   ;
+r{eɛ}m[+ATR]   VSuffixes   ;
+s{uʊ}b[-ATR]   aVSuffixes   ;
+tyak[-ATR]  aVSuffixes   ;
 
-LEXICON aekVerbs
+LEXICON akVerbs
 {iɪ}b{oɔ}y[+ATR]    iVSuffixes  ;
 {iɪ}b{uʊ}s[+ATR]    oVSuffixes  ;
-m{uʊ}j[-ATR]   VSuffixes   ;
+{iɪ}m{uʊ}j[-ATR]   VSuffixes   ;
 
 ! vim: set ft=xfst-lexc:
