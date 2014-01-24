@@ -1,0 +1,43 @@
+! Divvun & Giellatekno - open source grammars for Turkana language
+! Copyright © 2012 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+!! Morphology
+!! ----------
+!! This is a Turkana morphology for proof-of-concept demo of ATR harmony
+!! among other things
+
+
+Multichar_Symbols
+!! Analysis symbols
+!! ----------------
+!! We've ignored analyses for this part of proof-of-concept
+
+
+!! Morphophonology
+!! ---------------
+!! The ATR harmony affects following set of vowels, the leftmost being the
+!! initial (neutral) and others downward modified in clockwise order.
+ {oɔ} {eɛ} {uʊ} {iɪ} {ao} {ae}
+
+!! And following triggers to control the ATR dominant overrides and ATR
+!! stuff
+ [+ATR] [-ATR] [+ATRdom] [-ATRdom]
+ [+ATR←NoLow] [-ATR←NoLow]
+ [NATR]
+LEXICON Root
+!! our examples are verbs, but this is prefixing language, so we'll start from
+!! there.
+0   VPrefixes   ;
+
+! vim: set ft=xfst-lexc:

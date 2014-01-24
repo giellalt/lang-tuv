@@ -1,0 +1,22 @@
+
+Morphology
+----------
+This is a Turkana morphology for proof-of-concept demo of ATR harmony
+among other things
+
+
+Analysis symbols
+----------------
+We've ignored analyses for this part of proof-of-concept
+
+
+Morphophonology
+---------------
+The ATR harmony affects following set of vowels, the leftmost being the
+initial (neutral) and others downward modified in clockwise order.
+
+And following triggers to control the ATR dominant overrides and ATR
+stuff
+our examples are verbs, but this is prefixing language, so we'll start from
+there.
+

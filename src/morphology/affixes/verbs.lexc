@@ -1,0 +1,43 @@
+!! Verb inflection
+!! ---------------
+!! The UNDEFINED language verbs inflect in persons.
+
+LEXICON VPrefixes
+0   aeVPrefix   ;
+0   akVPrefix  ;
+
+LEXICON aeVPrefix
+a+    aeVerbs   ;
+{eɛ}+    aeVerbs   ;
+a+ki+    aeVerbs   ;
+
+LEXICON akVPrefix
+a+k+ akVerbs   ;
+{eɛ}+k+ akVerbs   ;
+
+LEXICON aVSuffixes
+a+    VSuffixes   ;
+
+LEXICON iVSuffixes
+i+    VSuffixes   ;
+
+LEXICON oVSuffixes
+o+  VSuffixes   ;
+
+LEXICON ɪVSuffixes
+ɪ+  VSuffixes   ;
+
+LEXICON VSuffixes
++e[+ATRdom]         #   ;
++ɛ+rɛ[-ATRdom]    #   ;
++{uʊ}n              #   ;
++{ao}r              #   ;
++ɔr[-ATR←NoLow]              #   ;
++k{iɪ}n{iɪ}[NATR]         #   ;
++e[+ATR←NoLow]         #   ;
++een[+ATR←NoLow]    #   ;
+
+    #   ;
+
+! vim: set ft=xfst-lexc:
+
