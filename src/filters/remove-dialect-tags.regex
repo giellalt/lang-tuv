@@ -1,9 +1,0 @@
-# This regex removes tags we do not want in the ordinary $(GTLANG).fst
-# That is, we do not give them as output from analysis
-
-# This file is just a dummy file, to be replaced by real content, or
-# perhaps, if you remember to adjust the makefile as well, deleted.
-
-# delete dialect tags, if we had some:
-0 <- %+Dial%/%-OneDialectOnlyForms,
-0 <- %+Dial%/%-AnotherDialectOnlyForms;
