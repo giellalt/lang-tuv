@@ -1,5 +1,5 @@
-! Divvun & Giellatekno - open source grammars for Turkana language
-! Copyright © 2012 The University of Tromsø & the Norwegian Sámi Parliament
+! Divvun & Giellatekno - open source grammars for __UNDEFINED__ language
+! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
 ! This program is free software; you can redistribute and/or modify
@@ -10,16 +10,16 @@
 ! also available in the file $GTHOME/LICENSE.txt.
 !
 ! Other licensing options are available upon request, please contact
-! giellatekno@hum.uit.no or feedback@divvun.no
+! giellatekno@uit.no or feedback@divvun.no
 
 !! Morphology
 !! ----------
 !! This is a Turkana morphology for proof-of-concept demo of ATR harmony
 !! among other things
 
+Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
-Multichar_Symbols
-!! Analysis symbols
+!! !!Analysis symbols
 !! ----------------
 !! We've ignored analyses for this part of proof-of-concept
 
