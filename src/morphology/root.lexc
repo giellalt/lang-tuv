@@ -68,5 +68,7 @@ LEXICON Root
 !! our examples are verbs, but this is prefixing language, so we'll start from
 !! there.
 0   VPrefixes   ;
+    Punctuation ;
+    Symbols     ;
 
 ! vim: set ft=xfst-lexc:
