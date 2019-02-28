@@ -19,6 +19,8 @@
 
 Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
+
 !! !!Analysis symbols
 !  ----------------
 !! We've ignored analyses for this part of proof-of-concept
