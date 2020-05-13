@@ -1,0 +1,35 @@
+[package]
+name = "tuv"
+human_name = "Turkana"
+version = "0.1.0"
+
+# Table of speller tag -> filename to include in the bundle
+# filenames depends on specific project
+[spellers.tuv]
+filename = "tuv-mobile.zhfst"
+
+# Table of bundles to generated
+# key is the type of bundle
+# Windows speller bundle require a uuid for the installer
+[bundles.speller_win]
+package = "speller-tuv"
+platform = "windows"
+uuid = "D482430A-8DE0-4156-A8AD-C6B79FDA1FBD"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_macos]
+pkg_id = "no.divvun.MacDivvun.tuv"
+package = "speller-tuv"
+platform = "macos"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_win_mso]
+package = "speller-tuv-mso"
+platform = "windows"
+uuid = "25A5028E-E903-4370-83A3-2B6563B55E5B"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_mobile]
+package = "speller-tuv"
+platform = "mobile"
+repo = "https://pahkat.uit.no/main/"
