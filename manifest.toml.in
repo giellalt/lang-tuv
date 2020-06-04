@@ -1,0 +1,9 @@
+name = "Turkana"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.tuv"
+
+[windows]
+system_product_code = "D482430A-8DE0-4156-A8AD-C6B79FDA1FBD"
+msoffice_product_code = "25A5028E-E903-4370-83A3-2B6563B55E5B"
