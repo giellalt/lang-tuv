@@ -1,5 +1,5 @@
 
-!! !!!The Turkana morphophonological/twolc rules file 
+!! # The Turkana morphophonological/twolc rules file 
 
 
 Alphabet
@@ -43,12 +43,12 @@ ContextATRplus = [ATRplusDeep: | :ATRplusSurf ] ;
 ContextATRminus = [ATRminusDeep: | :ATRminusSurf ] ;
 blockers = :blockersSurf | blockersDeep: ;
 
-!! !!!Rules
+!! # Rules
 
 Rules
 
 "Where ATR+ is possible"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AP => _ ?* ContextATRplus ;
          ContextATRplus ?* _ NoATRs ;
          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
@@ -56,7 +56,7 @@ AX:AP => _ ?* ContextATRplus ;
                                             matched ;
 
 "Where ATR- is possible"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AM => _ ?* ContextATRminus ;
          ContextATRminus ?* _ NoATRs ;
          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
@@ -64,7 +64,7 @@ AX:AM => _ ?* ContextATRminus ;
                                             matched ;
 
 "Disallow broken harmonies plus"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AP /<= _ \blockers* :ATRminusSurf ;
           :ATRminusSurf \blockers* _ ;
          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
@@ -72,7 +72,7 @@ AX:AP /<= _ \blockers* :ATRminusSurf ;
                                             matched ;
 
 "Disallow broken harmonies minus"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AM /<= _ \blockers* :ATRplusSurf ;
           :ATRplusSurf \blockers* _ ;
          where AX in ( %{oɔ%} %{eɛ%} %{uʊ%} %{iɪ%} )
@@ -80,21 +80,21 @@ AX:AM /<= _ \blockers* :ATRplusSurf ;
                                             matched ;
 
 "Require ATR+ No Low"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AH <= _  \ATRdom:* %[%+ATR←NoLow%]:   ;
          where AX in ( %{oɔ%} %{eɛ%} )
                                           AH in (   o      e    )
                                             matched ;
 
 "Require ATR- No Low"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AM <= _  \ATRdom:* %[%-ATR←NoLow%]: ;
          where AX in ( %{oɔ%} %{eɛ%} )
                                           AM in (    ɔ      ɛ     )
                                             matched ;
 
 "Where ATR+ is required"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AP <= _ \ATRdom:* %[%+ATRdom%]: ;
          %[%+ATR%]: \ATRminusDeep:* _ NoATRs %[NATR%]: ;
         _ NoATRs %[%+ATR%]: NoATRs .#. ;
@@ -103,7 +103,7 @@ AX:AP <= _ \ATRdom:* %[%+ATRdom%]: ;
                                             matched ;
 
 "Where ATR- is required"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 AX:AM <= _ \ATRdom:* %[%-ATRdom%]: ;
          %[%-ATR%]: \ATRplusDeep:* _ NoATRs %[NATR%]: ;
         _ NoATRs %[%-ATR%]: NoATRs .#. ;
@@ -113,5 +113,5 @@ AX:AM <= _ \ATRdom:* %[%-ATRdom%]: ;
 
 
 "Itive suffix after +ATR"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
 %{ao%}:o <=> [:ATRplusSurf | %[%+ATR%]: ] \[ATRminusDeep: ]* _ ;
