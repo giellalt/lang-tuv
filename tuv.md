@@ -1,3 +1,70 @@
+Noun inflection
+The Turkana language nouns inflect in cases.
+
+
+
+Proper noun inflection
+The Turkana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+Adjective inflection
+The Turkana language adjectives compare.
+
+
+
+Verb inflection
+The Turkana language verbs inflect in persons.
+
+
+
+
+
+
+
+
+
+
+
+
+# The Turkana morphophonological/twolc rules file 
+
+
+
+
+
+
+
+
+# Rules
+
+
+**Where ATR+ is possible**  
+
+**Where ATR- is possible**  
+
+**Disallow broken harmonies plus**  
+
+**Disallow broken harmonies minus**  
+
+**Require ATR+ No Low**  
+
+**Require ATR- No Low**  
+
+**Where ATR+ is required**  
+
+**Where ATR- is required**  
+
+
+**Itive suffix after +ATR**  
 
 Morphology
 This is a Turkana morphology for proof-of-concept demo of ATR harmony
@@ -49,34 +116,99 @@ given the proper use of these flags.
 our examples are verbs, but this is prefixing language, so we'll start from
 there.
 
-
-# The Turkana morphophonological/twolc rules file 
-
-
+Nouns
+Nouns in the Turkana language are things.
 
 
+Prefixes
+Prefixes in the Turkana language are bound to beginning of other words.
+
+
+
+Pronouns
+Pronouns in the Turkana language are references to things.
+
+
+Adjectives
+Adjectives in the Turkana language describe things.
+
+
+Verbs
+Verbs in the Turkana language are actions.
+
+
+
+Numerals
+Numerals in the Turkana language are numbers.
 
 
 
 
-# Rules
 
 
-**Where ATR+ is possible**  
-
-**Where ATR- is possible**  
-
-**Disallow broken harmonies plus**  
-
-**Disallow broken harmonies minus**  
-
-**Require ATR+ No Low**  
-
-**Require ATR- No Low**  
-
-**Where ATR+ is required**  
-
-**Where ATR- is required**  
 
 
-**Itive suffix after +ATR**  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Turkana are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
+
