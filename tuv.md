@@ -1,37 +1,27 @@
-Noun inflection
-The Turkana language nouns inflect in cases.
+Nouns
+Nouns in the Turkana language are things.
+
+
+Numerals
+Numerals in the Turkana language are numbers.
+
+
+Verbs
+Verbs in the Turkana language are actions.
 
 
 
-Proper noun inflection
-The Turkana language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+Prefixes
+Prefixes in the Turkana language are bound to beginning of other words.
 
 
 
-
-# Symbol affixes
-
-
+Adjectives
+Adjectives in the Turkana language describe things.
 
 
-
-Adjective inflection
-The Turkana language adjectives compare.
-
-
-
-Verb inflection
-The Turkana language verbs inflect in persons.
-
-
-
-
-
-
-
-
-
+Pronouns
+Pronouns in the Turkana language are references to things.
 
 
 
@@ -65,6 +55,42 @@ The Turkana language verbs inflect in persons.
 
 
 **Itive suffix after +ATR**  
+
+# Symbol affixes
+
+
+
+
+
+Noun inflection
+The Turkana language nouns inflect in cases.
+
+
+
+Proper noun inflection
+The Turkana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Verb inflection
+The Turkana language verbs inflect in persons.
+
+
+
+
+
+
+
+
+
+
+
+Adjective inflection
+The Turkana language adjectives compare.
+
+
+
 
 Morphology
 This is a Turkana morphology for proof-of-concept demo of ATR harmony
@@ -116,30 +142,20 @@ given the proper use of these flags.
 our examples are verbs, but this is prefixing language, so we'll start from
 there.
 
-Nouns
-Nouns in the Turkana language are things.
-
-
-Prefixes
-Prefixes in the Turkana language are bound to beginning of other words.
 
 
 
-Pronouns
-Pronouns in the Turkana language are references to things.
+We describe here how abbreviations are in Turkana are read out, e.g.
+for text-to-speech systems.
 
+For example:
 
-Adjectives
-Adjectives in the Turkana language describe things.
-
-
-Verbs
-Verbs in the Turkana language are actions.
-
-
-
-Numerals
-Numerals in the Turkana language are numbers.
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -195,20 +211,4 @@ Numerals in the Turkana language are numbers.
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Turkana are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
