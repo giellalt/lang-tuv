@@ -1,7 +1,7 @@
 # Turkana documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/lang-tuv)](https://raw.githubusercontent.com/giellalt/lang-tuv/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-tuv)](https://raw.githubusercontent.com/giellalt/lang-tuv/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tuv)](https://github.com/giellalt/lang-tuv/issues)
 [![Build status](https://github.com/giellalt/lang-tuv/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tuv/actions)
 
