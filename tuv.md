@@ -605,30 +605,40 @@ These were the set types.
 
 
 
-Nouns
-Nouns in the Turkana language are things.
-
-
-Numerals
-Numerals in the Turkana language are numbers.
-
-
-Verbs
-Verbs in the Turkana language are actions.
+Verb inflection
+The Turkana language verbs inflect in persons.
 
 
 
-Prefixes
-Prefixes in the Turkana language are bound to beginning of other words.
 
 
 
-Adjectives
-Adjectives in the Turkana language describe things.
 
 
-Pronouns
-Pronouns in the Turkana language are references to things.
+
+
+
+Proper noun inflection
+The Turkana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Adjective inflection
+The Turkana language adjectives compare.
+
+
+
+Noun inflection
+The Turkana language nouns inflect in cases.
+
+
+
+
+# Symbol affixes
+
+
+
 
 
 
@@ -662,40 +672,30 @@ Pronouns in the Turkana language are references to things.
 
 
 **Itive suffix after +ATR**  
-
-# Symbol affixes
-
-
+Verbs
+Verbs in the Turkana language are actions.
 
 
 
-Noun inflection
-The Turkana language nouns inflect in cases.
+Pronouns
+Pronouns in the Turkana language are references to things.
+
+
+Numerals
+Numerals in the Turkana language are numbers.
+
+
+Adjectives
+Adjectives in the Turkana language describe things.
+
+
+Prefixes
+Prefixes in the Turkana language are bound to beginning of other words.
 
 
 
-Proper noun inflection
-The Turkana language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
-Verb inflection
-The Turkana language verbs inflect in persons.
-
-
-
-
-
-
-
-
-
-
-
-Adjective inflection
-The Turkana language adjectives compare.
-
+Nouns
+Nouns in the Turkana language are things.
 
 
 
@@ -752,22 +752,6 @@ there.
 
 
 
-We describe here how abbreviations are in Turkana are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -818,6 +802,22 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Turkana are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
