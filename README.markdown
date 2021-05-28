@@ -77,7 +77,7 @@ svn checkout https://github.com/giellalt/lang-tuv.git/trunk lang-tuv
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-tuv/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-tuv/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
