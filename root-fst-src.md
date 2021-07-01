@@ -49,3 +49,5 @@ given the proper use of these flags.
 our examples are verbs, but this is prefixing language, so we'll start from
 there.
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-tuv/blob/main/../src/fst/root.lexc)</small>
