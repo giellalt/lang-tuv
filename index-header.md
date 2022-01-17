@@ -7,6 +7,9 @@
 
 This page documents the work on the **Turkana language model**. 
 
+It is still in an initial state, and contains less than a
+hundred words.
+
 # Project documentation
 
 * Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
