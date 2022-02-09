@@ -10,7 +10,6 @@ among other things
 ## Analysis symbols
 We've ignored analyses for this part of proof-of-concept
 
-
 Morphophonology
 The ATR harmony affects following set of vowels, the leftmost being the
 initial (neutral) and others downward modified in clockwise order.
@@ -50,4 +49,8 @@ our examples are verbs, but this is prefixing language, so we'll start from
 there.
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-tuv/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-tuv/blob/main/src/fst/root.lexc)</small>
+
+---
+

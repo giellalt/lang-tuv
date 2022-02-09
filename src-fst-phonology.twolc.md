@@ -1,15 +1,7 @@
 
 # The Turkana morphophonological/twolc rules file 
 
-
-
-
-
-
-
-
 # Rules
-
 
 **Where ATR+ is possible**  
 
@@ -27,7 +19,11 @@
 
 **Where ATR- is required**  
 
-
 **Itive suffix after +ATR**  
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-tuv/blob/main/../src/fst/phonology.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-tuv/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
